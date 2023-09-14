@@ -1,0 +1,159 @@
+h2 {
+    color: midnightblue; 
+}
+
+body { 
+    margin: 10px auto;
+    min-width: 250px;
+    max-width: 50%;
+    background-color:gainsboro;
+    word-wrap: break-word;      /* force line break when word exceeds list margins */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* stylize list and list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 12px 16px 40px;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background:white;
+    border: solid .5px;
+    border-color:lightgrey;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+
+    /* allow list items to be deselected */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* change bkgrnd color when mouse hover over List */
+ul li:hover {
+    background-color:floralwhite;
+    opacity: 90%;
+}
+
+/* when list item checked , style change */
+ul li.checked {
+    background: floralwhite;
+    color:black;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content:"\2713\0020";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    height: 15px;
+    width: 7px;
+}
+
+/* close button stylized */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    color:navy;
+    display: block;
+}
+
+/* when mouse hovers over X button */
+.close:hover {
+    background-color:lavender;
+    opacity: 70%;
+    color:black;
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+  text-align:justify;
+  text-decoration:none;
+  margin: 0 auto;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0px;
+    border-style: solid;
+    border-width:2px;
+    border-color:navy;
+    width: 75%;
+    padding: 15px;
+    margin-bottom:20px;
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+input:hover {
+  background-color:floralwhite;
+  opacity:90%;
+}
+
+.addBtn {
+    padding: 15px;
+    width: 25%;
+    background:navy;
+    color:white;
+    float: left;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color:navy;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-weight: bold;
+    font-size: x-large;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background:mediumblue;
+    color:white;
+}
+
+#clear-list {
+    width: 30%;
+    padding: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 35%;
+    background:navy;
+    color:white;
+    cursor: pointer;
+}
+#clear-list:hover {
+    background-color:mediumblue;
+    color:white;
+}
